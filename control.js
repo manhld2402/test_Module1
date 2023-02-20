@@ -124,7 +124,7 @@ function updateData() {
     return student;
   });
   localStorage.setItem("listData", JSON.stringify(studentUpdate));
-  readListProduct();
+
   readListData();
 }
 function deleteData(studentPhone) {
