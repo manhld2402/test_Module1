@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control SV</title>
+    <link rel="stylesheet" href="./control.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="form">
+        <form name="dataForm">
+          <div class="form-group">
+            <label for="studentName">Họ và Tên: </label>
+            <input
+              type="text"
+              class="form-control"
+              id="studentName"
+              placeholder="Họ và Tên"
+            />
+          </div>
+          <div class="form-group">
+            <label for="youMail">Email: </label>
+            <input
+              type="email"
+              class="form-control"
+              id="studentMail"
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="studentPhone">Số điện thoại: </label>
+            <input
+              type="number"
+              class="form-control"
+              id="studentPhone"
+              placeholder="Số điện thoại"
+            />
+          </div>
+          <div class="form-group">
+            <label for="studentAddress">Quê quán: </label>
+            <input
+              type="text"
+              class="form-control"
+              id="studentAddress"
+              placeholder="Quê quán"
+            />
+          </div>
+          <div class="form-group">
+            <label>Giới tính: </label>
+            <select id="gender" onchange="showValue()">
+                <option value="Nam">Nam</option>
+                <option value="Nữ">Nữ</option>
+            </select>
+          <button tyle="submit" id="btnSubmit" onclick="validate()">Lưu lại</button>
+        </form>
+      </div>
+      <div class="control">
+        <table border="1">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Họ và Tên</th>
+                <th>Giới tính</th>
+                <th>Email</th>
+                <th>Số điện thoại</th>
+                <th>Địa chỉ</th>
+                <th>Hành động</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+      </div>
+    </div>
+    <script src="./control.js"></script>
+  </body>
+</html>
